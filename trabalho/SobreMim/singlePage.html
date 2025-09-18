@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>sobre mim <3</title>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <style>
+    @font-face {
+      font-family: 'Coolvetica';
+      src: url('coolvetica/Coolvetica\ Rg.otf ') format('truetype');
+    }
+
+  .centralizado {
+      text-align: center;
+  }
+
+.foto-perfil {
+  width: 300px;
+  height: 300px;
+  height: auto;
+  box-shadow: 0 0 10px rgba(0,0,0,0.5);
+  border-radius: 10px;
+}
+
+.texto-apresentacao {
+  max-width: 1000px;
+}
+
+
+    body {
+      background: rgb(124, 30, 30);
+      font-family: 'Coolvetica', sans-serif;
+      color: rgb(241, 247, 253);
+      margin: 0;
+    }
+
+    header, footer {
+      background-color: #8b2d2d;
+      padding: 10px;
+      text-align: center;
+    }
+
+    main {
+      padding: 40px 20px 20px;
+    }
+
+    header h1 {
+      margin-top: 20px;
+      margin-bottom: 20px;
+    }
+
+    ul {
+      list-style-position: inside;
+      text-align: center;
+    }
+
+
+
+
+
+    .carrossel {
+  max-width: 500px;
+  margin: 0 auto;
+  box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+.carousel-item img {
+  height: 500px;
+  width: 500px;
+  object-fit: cover;
+}
+
+
+.apresentacao {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  padding: 20px;
+}
+
+.foto-perfil {
+  width: 150px;
+  height: auto;
+  border-radius: 10px;
+}
+
+.texto-apresentacao {
+  flex: 1;
+  color: white;
+  font-size: 1.1em;
+  max-width: 600px;
+}
+
+.favoritos {
+  padding: 20px;
+  text-align: center;
+  color: white;
+}
+
+.colunas {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.coluna {
+  background-color: rgba(255, 255, 255, 0.1);
+  padding: 15px;
+  border-radius: 10px;
+  width: 200px;
+  min-height: 160px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.2);
+  text-align: center;
+}
+
+.coluna h3 {
+  margin-bottom: 10px;
+}
+
+.coluna ul {
+  list-style: none;
+  padding: 0;
+  text-align: center;
+}
+
+.coluna li {
+  margin-bottom: 5px;
+}
+
+.botao {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #8b2d2d;
+  color: white;
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: bold;
+  font-size: 16px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.2);
+  transition: background 0.3s;
+}
+
+.botao:hover {
+  background-color: #c25454;
+}
+
+.tabela-horarios {
+  border-collapse: collapse;
+}
+
+.tabela-horarios td,
+.tabela-horarios th {
+  border: 2px solid white;
+  padding: 8px 12px;
+  text-align: center;
+}
+
+.videos {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 colunas */
+    gap: 20px; /* espaço entre os vídeos */
+}
+
+.videos iframe {
+    width: 100%; /* ocupa todo o espaço da coluna */
+    height: 250px; /* altura ajustada */
+}
+
+
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <h1>Amanda Estercio da Silva</h1>
+  </header>
+
+
+  <main class="centralizado">
+
+    <div class="apresentacao">
+      <img src="imagem-amanda.png" alt="Foto da Amanda" class="foto-perfil">
+      <div class="texto-apresentacao">
+        <h2 style="text-align: left;">Sobre Mim :D</h2>
+        <h3 style="text-align: left;"> Apresentação</h3>
+        <p style="text-align: left;">Oii, meu nome é Amanda. Tenho 17 anos, nasci e cresci aqui em Umuarama blablablablabla</p>
+      </div>
+    </div>
+    
+    <br>
+    <p>˚ʚ♡ɞ˚</p>
+    <br>
+
+    <h2>Meus Itens Favoritos</h2>
+    <h3>➼ Comidas favoritas:</h2>
+    <ul>
+      <li>Strogonoff</li>
+      <li>Pizza</li>
+      <li>Café</li>
+    </ul>
+    <br>
+<div id="carouselComidas" class="carousel slide carrossel" data-bs-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="strogonoff.jpg" class="d-block w-100" alt="imagem de um prato de strogonoff">
+    </div>
+    <div class="carousel-item">
+      <img src="pizza.jpg" class="d-block w-100" alt="pizza de calabresa">
+    </div>
+    <div class="carousel-item">
+      <img src="cafe.jpg" class="d-block w-100" alt="duas xícaras de café">
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselComidas" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Anterior</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselComidas" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Próximo</span>
+  </button>
+</div>
+
+  
+    <br>
+    <br>
+    <br>
+
+  <h3 style="text-align: center;">➼ Doces favoritos:</h3>
+    <ul">
+      <li>Brigadeiro</li>
+      <li>Bis de oreo</li>
+      <li>Bolo de aniversário</li>
+    </ul>
+    <br>
+<div id="carouselDoces" class="carousel slide carrossel" data-bs-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="brigadeiro.jpg" class="d-block w-100" alt="brigadeiro">
+    </div>
+    <div class="carousel-item">
+      <img src="bis.jpg" class="d-block w-100" alt="bis de oreo">
+    </div>
+    <div class="carousel-item">
+      <img src="bolo.jpg" class="d-block w-100" alt="bolo de aniversário">
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselDoces" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Anterior</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselDoces" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Próximo</span>
+  </button>
+</div>
+
+<br>
+<br>
+<br>
+
+<h3>➼ Livros favoritos:</h3>
+<ul>
+  <li>A biblioteca da meia-noite - Matt Haig</li>
+  <li>Heartstopper - Alice Oseman</li>
+  <li>Jantar Secreto - Raphael Montes</li>
+</ul>
+<br>
+<div id="carouselLivro" class="carousel slide carrossel" data-bs-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="livro1.jpg" class="d-block w-100" alt="A Biblioteca da Meia-Noite, por Matt Haig">
+    </div>
+    <div class="carousel-item">
+      <img src="livro2.jpg" class="d-block w-100" alt="Heartstopper, por Alice Oseman">
+    </div>
+    <div class="carousel-item">
+      <img src="livro3.jpg" class="d-block w-100" alt="Jantar Secreto, por Raphael Montes">
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselLivro" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Anterior</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselLivro" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Próximo</span>
+  </button>
+</div>
+
+<br>
+<p> ⋆𐙚₊˚⊹♡ </p>
+<br>
+
+<section class="favoritos">
+  <h2>Outros Itens Favoritos</h2>
+
+  <br>
+
+  <div class="colunas">
+    <div class="coluna">
+      <h3>Esportes</h3>
+      <ul>
+        <li>Vôlei</li>
+        <li>Badminton</li>
+        <li>Skate</li>
+      </ul>
+    </div>
+
+    <div class="coluna">
+      <h3>Séries</h3>
+      <ul>
+        <li>Stranger Things</li>
+        <li>Julie and the phantons</li>
+        <li>Steven Universe</li>
+      </ul>
+    </div>
+
+    <div class="coluna">
+      <h3>Jogos</h3>
+      <ul>
+        <li>Undertale</li>
+        <li>Honkai Star Rail</li>
+        <li>Deltarune</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+
+<br>
+<p style="text-align: center;">♡ ‧₊˚ ⋅ ౨ৎ  ‧₊ .ᐟ </p>
+<br>
+
+
+<h2>Outros</h2>
+<h3>Links para sites interessantes</h3>
+<a href="https://www.youtube.com" target="_blank" class="botao">Ir para o YouTube</a>
+<br>
+<br>
+<a href="https://twitter.com/" target="_blank" class="botao">Ir para o twitter</a>
+<br>
+<br>
+<a href="https://picrew.me/en/" target="_blank" class="botao">Ir para o picrew</a>
+
+<br>
+<br>
+<p>˗ˏˋ ♡ ˎˊ˗</p>
+<br>
+
+<h3>Tabela de horários</h3>
+
+<table border="2" align="center" class="tabela-horarios">
+  <tr>
+    <th>disciplina</th>
+    <th>professor</th>
+    <th>dia das aulas</th>
+    <th>carga horária</th>
+  </tr>
+  <tr>
+    <td>techWeb</td>
+    <td>borth</td>
+    <td>sexta-feira</td>
+    <td>18hrs</td>
+  </tr>
+  <tr>
+    <td>portugues</td>
+    <td>paulo</td>
+    <td>segunda-feira</td>
+    <td>12hrs</td>
+  </tr>
+  <tr>
+    <td>biologia</td>
+    <td>fernanda</td>
+    <td>quarta-feira</td>
+    <td>12hrs</td>
+  </tr>
+  <tr>
+    <td>matemática</td>
+    <td>alex</td>
+    <td>segunda-feira</td>
+    <td>15hrs</td>
+  </tr>
+</table>
+
+<br>
+<br>
+<p>⋆˙⟡♡</p>
+<br>
+
+<h3>Vídeos Favoritos</h3>
+
+<div class="videos">
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/KDnKIryNPgQ?si=jKIzKfQKxF1_3lFC" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/B8Us0DZgexw?si=rlwaBP2BLILfLtCc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/pbHqJcajRBs?si=R1mFSysfBJBNjL9O" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+</div>
+
+<br>
+<br>
+<p>✧˚ ༘ ⋆｡♡˚</p>
+<br>
+
+<h3>Contato</h3>
+    <ul>
+      <li>Whatsapp: 44 98868-0464</li>
+      <li>Email: amanda.estercio@gmail.com</li>
+    </ul>
+
+<br>
+<br>
+<br>
+<p>૮₍´˶• . • ⑅ ₎ა</p>
+<br>
+<br>
+<br>
+
+</main>
+  <footer>
+    &copy; Amanda Estercio - 2025
+  </footer>
+
+  
+</body>
+</html>
